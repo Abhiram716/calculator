@@ -4,26 +4,30 @@ body{
     justify-content: center;
     align-items: center;
     height: 90vh;
+    background-color: white;
 }
 .container{
+    background-color: grey;
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 2px solid black;
     border-radius: 10px;
     padding: 10px;
-    height: 700px;
-    width: 550px;
+    height: 650px;
+    width: 500px;
 }
-.display{
-    border: 2px solid black;
+#display{
+    border: 2px solid white;
+    background-color: white;
+    text-align: right;
+    font-size: 50px;
     height: 170px;
     border-radius: 10px;
     margin-bottom: 20px;
     width: 500px;
 }
 .sub-container{
-    border: 2px solid white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,12 +47,8 @@ body{
     margin-right: 20px;
     border-radius: 5px;
     padding: 10px;
+    background-color: lightcoral;
 }
-#clear:hover{
-    background-color: red;
-    color: aliceblue;
-}
-
 #delete{
     border: 2px solid black;
     width: 220px;
@@ -56,17 +56,19 @@ body{
     border-radius: 5px;
     font-size: 30px;
     padding: 10px;
+    background-color: aquamarine;
 }
-#delete:hover{
-    background-color: red;
-    color: aliceblue;
-}
+
 .num-buttons{
     display: flex;
     flex-direction: column-reverse;
 }
 button{
+    box-sizing: border-box;
+    border: 2px solid black;
     font-size:larger;
+    border-radius: 10px;
+    background-color:;
     padding: 40px;
     width: 80px;
     height: 50px;
