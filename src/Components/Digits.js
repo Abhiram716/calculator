@@ -1,13 +1,13 @@
 import React from 'react'
 
-export default function Digits(porps) {
+export default function Digits({updateCalc, calculate}) {
     
     const createDigits = () =>{
         const digits =[];
 
         for(let i =1;i<10;i++){
             digits.push(
-                <button onClick={i.toString()}key={i}>
+                <button onClick={() => updateCalc(i.toString())}key={i}>
                     {i}
                 </button>
             )
@@ -18,13 +18,10 @@ export default function Digits(porps) {
     return (
         <div className='digits'>
             {createDigits()}
-            <button>0</button>
-            <button>.</button>
-            <button>=</button>
+            <button onClick={() => updateCalc('0')}>0</button>
+            <button onClick={() => updateCalc('.')}>.</button>
+            <button onClick={() => calculate() }>=</button>
         </div>
     )
 }
-
-
-/** */
 

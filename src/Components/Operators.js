@@ -1,20 +1,15 @@
-import React from 'react'
-export default function Operators(props) {
-  
+import React from "react";
+export default function Operators({ updateCalc, deleteLastChar }) {
   return (
-    <div className='operators'>
+    <div className="operators">
+      <button onClick={() => updateCalc("/")}>/</button>
+      <button onClick={() => updateCalc("*")}>*</button>
+      <button onClick={() => updateCalc("+")}>+</button>
+      <button onClick={() => updateCalc("-")}>-</button>
 
-        <button onClick={props.updateCalc('/')}>/</button>
-        <button onClick={props.updateCalc('*')}>*</button>
-        <button onClick={props.updateCalc('+')}>+</button>
-        <button onClick={props.updateCalc("-")}>-</button>
-
-        <button >DEL</button>
-        
+      <button onClick={() => deleteLastChar()}>DEL</button>
     </div>
-  )
+  );
 }
-
-
 
 

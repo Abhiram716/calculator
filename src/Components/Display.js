@@ -1,13 +1,12 @@
-import React from 'react'
+import React from "react";
 
-export default function Display(props) {
+export default function Display({ calc, result, setresult }) {
   return (
-    <div  className='display'>
-      {props.result ? <span>(0)</span> : ""}
-      { props.calc|| 0}
+    <div className="display">
+      {result ? <span>({result})</span> : ""}
+      {calc || 0}
     </div>
-  )
+  );
 }
-
 
 
